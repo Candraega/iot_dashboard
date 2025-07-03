@@ -1,0 +1,66 @@
+//
+// forms.scss
+//
+
+
+@layer components {
+    label {
+        @apply inline-block text-sm font-semibold cursor-pointer text-default-600;
+    }
+
+    .form-input,
+    .form-textarea,
+    .form-select {
+        @apply font-normal rounded block w-full border-default-200 text-sm focus:border-default-300 focus:ring-0 bg-white;
+    }
+
+    .form-checkbox,
+    .form-radio {
+        @apply bg-inherit cursor-pointer border-default-300 focus:ring-0 focus:ring-offset-0;
+    }
+
+    // Form Switch
+    .form-switch {
+        @apply w-9 h-5 flex items-center appearance-none bg-default-200 border-2 border-transparent rounded-full focus:ring-0 focus:ring-offset-0 cursor-pointer transition-colors ease-in-out duration-200 checked:bg-none;
+
+        &::before {
+            @apply content-[''] inline-block w-4 h-4 bg-white rounded-full translate-x-0 transform transition ease-in-out checked:translate-x-full duration-200;
+        }
+
+        &.form-switch-lg {
+            @apply w-11 h-6;
+
+            &::before {
+                @apply w-5 h-5;
+            }
+        }
+    }
+
+    // Card radio
+    .card-radio {
+        @apply relative;
+
+        .form-label {
+            @apply border overflow-hidden text-ellipsis whitespace-nowrap flex flex-col cursor-pointer border-default-200;
+        }
+
+        .form-radio {
+            @apply hidden;
+
+            &:checked+.form-label {
+                @apply border-primary text-primary;
+            }
+        }
+    }
+
+    // Radio Button Group
+    .btn-radio {
+        .form-radio {
+            @apply hidden;
+
+            &:checked+label {
+                @apply bg-primary text-white;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+/*
+Template Name: Dashtrap - Tailwind CSS 3 Admin Layout & UI Kit Template
+Version: 1.0
+Author: MyraStudio
+File: Main Css File
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+// Structure
+@import "structure/general";
+@import "structure/sidenav";
+@import "structure/topbar";
+
+// Components
+@import "custom/helper";
+@import "custom/buttons";
+@import "custom/card";
+@import "custom/forms";
+@import "custom/chart";
+@import "custom/fullcalendar";
+
+
+
+// Advanced Plugins
+@import "custom/simplebar";

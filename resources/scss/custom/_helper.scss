@@ -1,0 +1,36 @@
+.custom-scroll {
+    &::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+
+    &::-webkit-scrollbar:vertical {
+        width: 4px;
+    }
+
+    &::-webkit-scrollbar:horizontal {
+        height: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        @apply rounded-lg bg-slate-300/50;
+    }
+
+    &::-webkit-scrollbar-track {
+        @apply bg-transparent rounded-lg;
+    }
+
+    &::-webkit-scrollbar-corner {
+        @apply bg-transparent;
+    }
+}
+
+.filter-options li a {
+    @apply btn bg-transparent;
+}
+
+.filter-options li.active a,
+.filter-options li:active a,
+.filter-options li:focus a,
+.filter-options li:hover a {
+    @apply bg-primary text-white;
+}

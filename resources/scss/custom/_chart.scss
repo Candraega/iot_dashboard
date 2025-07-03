@@ -1,0 +1,83 @@
+.apex-charts {
+    min-height: 10px !important;
+}
+
+.apexcharts-canvas {
+    margin: 0 auto;
+}
+
+.apexcharts-radialbar-hollow {
+    @apply fill-white;
+}
+
+.apexcharts-canvas .apexcharts-text.apexcharts-xaxis-label,
+.apexcharts-canvas .apexcharts-text.apexcharts-yaxis-label,
+.apexcharts-canvas .apexcharts-title-text {
+    @apply fill-default-900 bg-default-50;
+}
+
+.apexcharts-canvas .apexcharts-tooltip.apexcharts-theme-light,
+.apexcharts-canvas .apexcharts-xaxistooltip.apexcharts-theme-light {
+    @apply shadow-none rounded-lg border border-default-300 bg-default-50/10 backdrop-blur-[100px];
+}
+
+.apexcharts-canvas .apexcharts-xaxistooltip-bottom:after,
+.apexcharts-canvas .apexcharts-xaxistooltip-bottom:before {
+    @apply border-b-default-200 border-dashed;
+}
+
+.apexcharts-canvas .apexcharts-tooltip-series-group.apexcharts-active {
+    @apply text-default-50 px-4 pb-2;
+}
+
+.apexcharts-canvas .apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
+    @apply px-4 py-2 mb-2 text-sm text-center border-default-400 border-dashed bg-default-200/10 backdrop-blur-[100px];
+}
+
+.apexcharts-grid-borders line,
+.apexcharts-gridline {
+    @apply stroke-default-200;
+}
+
+.apexcharts-legend-series {
+    @apply font-semibold;
+}
+
+.apexcharts-legend-text {
+    @apply text-default-300;
+    font-size: 13px !important;
+    vertical-align: middle;
+}
+
+.apexcharts-legend-marker {
+    vertical-align: middle;
+    margin-right: 5px !important;
+}
+
+.apexcharts-pie-label {
+    @apply fill-white;
+}
+
+.apexcharts-text.apexcharts-yaxis-title-text {
+    @apply fill-default-600
+}
+
+.apexcharts-xaxis line,
+.apexcharts-xaxis-tick {
+    @apply stroke-default-400;
+}
+
+.apex-charts text,
+.apexcharts-tooltip-title,
+.apexcharts-tooltip-text,
+.apexcharts-xaxistooltip-text,
+.apexcharts-yaxis .text,
+.apexcharts-xaxis .text,
+.apexcharts-datalabels text,
+.apexcharts-title-text,
+.apexcharts-legend-text,
+.apexcharts-subtitle-text,
+.apexcharts-tooltip {
+    font-family: Montserrat, sans-serif !important;
+    @apply text-default-900 font-base font-medium;
+}
