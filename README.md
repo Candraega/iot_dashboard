@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -64,3 +65,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+=======
+# iot_dashboard
+IoT Dashboard built with Laravel for managing and monitoring ESP32-based devices via MQTT (HiveMQ Cloud). Features include RFID card management, EEPROM reset, real-time device status, and secure admin authentication. Designed for efficient control and data visualization.
+>>>>>>> 1b594f727ea18938f1c7dfe5cd4ed92ca40701fc
